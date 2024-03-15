@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "./Input";
+import { Input } from ".";
 
 interface SelectPRops {
   value?: string | number | null | undefined;
@@ -55,7 +55,7 @@ const Select: React.FC<SelectPRops> = ({
         handleClouse();
       }
     }
-    
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
